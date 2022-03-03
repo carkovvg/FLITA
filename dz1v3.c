@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<ctype.h>
 #include<math.h>
 int Enter(char r){
     int number = 0;
@@ -22,11 +21,12 @@ int Perevod(int number){
 int main(){
     int number, rez;
     char r;
+    int i = 0;
     printf("Enter binary numbers through space: \n");
     while ((r = getchar()) != '\n'){
         number = Enter(r);
         rez = Perevod(number);
-        printf("Binary number: % 15d Decimal number: %d\n", number, rez );
+        printf("Binary number %d: % 15d Decimal number: %d\n", i, number, rez );
     }
     return 0;
 }
